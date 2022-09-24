@@ -1,0 +1,51 @@
+<html > <head>
+    <title > Pizzaria </title >
+    <meta  name =" viewport " content =" largura = largura do dispositivo, escala inicial = 1 " >
+    <link  rel =" folha de estilo " href =" https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css " >
+    <script  src =" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js " > </ script >
+    <script  src =" https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js " > </ script >
+    <link  rel =" folha de estilo " href =" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " >
+    <link  rel =" folha de estilo " href =" style.css " >
+<script  src =" main.js " > </script >
+</head>
+
+<body>
+    <div  class =" topnav " >
+        <a  class =" active " href =" # " > Pizzaria </a>
+        <div  class =" topnav-right ">
+         <a  href =" #viewblock "> Exibir menu </a>
+         <a  href =" #addTopings " > Adicionar Menu </a>
+        </div >
+    </div >
+
+    <div  class ="linha" id ="viewblock" >
+        <div  class ="imgDiv" > 
+            <img  class ="img-responsive" src ="pizza.png" >
+        </div >
+        <div  class =" menuDiv " >
+            <button id =" menuList " onclick ="getMenu()" > Mostrar Menu </ button >
+           <div  id =" displayMenu " > </ div >
+        </div >
+    </div >
+    
+    <div  class =" newRow " id =" addTopings " >
+        <classe div  =" bloco1 " >
+            <input  id =" addItem " placeholder =" Digite aqui para adicionar " ingredientes > 
+            <button class= "btn btn-success" onclick="addTop()">Adicionar Sugestão</button>
+            <br><br>
+            <button  id ="addToppings" onclick ="addItem()" > Mostrar Pizza </ button >
+        </div >
+		
+        <classe div  ="bloco2" >
+            <div  id ="displayAddedMenu" >
+            </div >
+        </div >
+        
+    </div >
+
+    < div >
+        <img class ="img-responsive" src = "topping.png" >
+    </div>
+
+
+</body> </html>
